@@ -263,6 +263,7 @@ nav {
   }
 
 .btn-cv {
+  margin-top: 2em;
   border: none;
   border-bottom: 8px solid var(--primary-lighter); 
 }
@@ -351,6 +352,14 @@ nav {
     display: grid;
     grid-template-columns: 1fr 1fr;
     column-gap: 1em;    
+  }
+
+  .content-container {
+    margin: 0 4em;
+  }
+
+  #social {  
+    padding: 8em 0.5em 1em;
   }
 
   nav {
