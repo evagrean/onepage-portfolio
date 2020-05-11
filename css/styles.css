@@ -1,0 +1,428 @@
+:root {
+  --primary-color: #E35760;
+  --primary-lighter: #e5676f;
+  --primary-darker: #cc4e56;
+  --primary-dark: #b7464d;
+  --secondary-color:  #343A40; /*#000628*/  
+  --secondary-darker: #24282c;
+  --primary-bg-color: #F9F6F7;
+  --secondary-bg-color: #FFFFFF;
+  --primary-font-color: #FFFFFF;
+  --secondary-font-color: #343A40;
+  --font-family-body: 'Nunito', Verdana, Geneva, sans-serif;
+  --font-family-headings: 'Nunito Sans', Verdana, Geneva, sans-serif;
+}
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* outline: 1px solid purple; */
+}
+
+/* Base Styles */
+body {
+  background: var(--secondary-color);
+  color: var(--primary-font-color);
+  text-align: center;
+  font-family: var(--font-family-body);
+  font-size: 1em;
+  line-height: 1.5; 
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-headings);
+}
+
+h1, h2, h3 {
+  padding: 0.2em 0;
+}
+
+p {
+  padding: 0.2em 0;
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#main h1 {
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  margin: 0.5em 0;
+  padding: 1em 2em;
+  background: var(--primary-color);
+  color: var(--primary-font-color);
+  border: 1px solid var(--primary-font-color);
+
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: var(--primary-darker);
+}
+
+.card-content {
+  padding: 0 1em;
+  }
+
+/* Mobile Styles */
+
+/* Header Showcase */
+
+#showcase {
+  min-height: 450px;
+  color: var(--primary-font-color);
+  text-align: center;
+}
+
+.box-one { 
+  min-height: 180px;
+  background: var(--primary-darker);
+}
+
+.box-two {
+  position: relative;
+  background: var(--primary-color);
+}
+
+.portrait {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  margin: auto;
+  margin-top: -90px;
+  left: 0;
+  right: 0;  
+  border-radius: 50%;  
+}
+
+#showcase h1 {
+  margin-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+
+#showcase .content-container {
+ padding: 6em 1.5em 0;
+}
+
+#showcase p {
+  padding-bottom: 1.5em;
+}
+
+.btn-text {
+  display: flex;
+  align-items: center;
+}
+
+.material-icons.arrow-down {
+  margin-left: 0.5em;
+  color: var(--primary-bg-color);
+  font-size: 1em;
+}
+
+/* Social Section */
+#social {  
+  padding: 10em 1.5em 1em;
+  background: var(--primary-color);
+  border-bottom: 0.5px solid var(--primary-darker);   
+}
+
+#social ul {
+  display: flex;
+  flex-direction: row;
+ justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;  
+}
+
+#social li {
+  margin: 0.5em;
+  padding: 0.5em;
+border: 0.5px solid var(--primary-dark);
+  border-radius: 50%;
+}
+
+#social li:hover {
+  background: var(--primary-lighter);
+  border: none;
+}
+
+#social img {
+  height: 1.2em;
+  width: 1.2em;
+}
+
+/* Nav Section */
+nav {
+  position: sticky;
+  top: 0;
+  padding: 0;
+  background: var(--primary-color);
+  color: var(--primary-font-color);
+  border-bottom: 8px solid var(--primary-lighter);
+  text-transform: uppercase;
+  }
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+
+.menu-item a {
+  display: block; 
+  color: var(--primary-font-color);
+}
+
+.hamburger {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0;
+  cursor: pointer;
+}
+
+.menu-item {
+  padding: 0.5em 0.2em;
+  width: 100%;  
+  text-align: center;
+}
+
+.menu-item:hover {
+  background: var(--secondary-color);
+}
+
+.border {
+  border-bottom: 0.5px solid var(--primary-darker);
+}
+
+.hamburger img {
+  margin: 0.5em;
+  height: 2em;
+  width: 2em;
+}
+
+.menu-container {
+  display: none;
+}
+
+.menu-container.visible {
+  display: block;
+}
+
+.fixed {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 20;
+}
+
+/*About Section */
+
+#about {
+  padding: 2em 0.5em;
+  background: var(--secondary-bg-color);
+  color: var(--secondary-font-color);
+  }
+
+.transferable-skills {
+  margin-top: 2em;
+}
+
+.skills-card {
+  margin-bottom: 2em;
+}
+
+
+.material-icons {
+  color: var(--primary-color);
+ font-size: 4em;
+  }
+
+.btn-cv {
+  border: none;
+  border-bottom: 8px solid var(--primary-lighter); 
+}
+
+/* Dev-Skills Sections*/
+
+#dev-skills {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 2em;
+  background: var(--secondary-color);
+  color: var(--primary-font-color);
+}
+
+.devskills-tag {  
+  margin: 0.3em;
+  padding: 0.5em;
+  background: var(--secondary-darker);
+  color: var(--primary-font-color);
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
+/* Work Section */
+
+#work {
+  padding: 2em 0.5em;
+  background: var(--primary-bg-color);
+  color: var(--secondary-font-color);
+}
+
+.projects {
+  margin-top: 2em;
+}
+
+.project-card {
+  margin-bottom: 1em;
+  background: var(--secondary-bg-color);
+  box-shadow: 2px 2px 10px -3px rgba(52,58,64,0.99);
+}
+/* Contact Section */
+
+#contact {
+  padding: 2em;
+  background: var(--primary-color);
+  color: var(--primary-font-color);
+}
+
+.email {
+  margin-top: 0.1em;
+  padding: 0;
+  color: var(--primary-darker);
+}
+
+/* Footer */
+
+#main-footer {
+  padding: 2em;
+  border-top: 8px solid var(--primary-darker);
+  text-align: center;
+}
+
+
+/* Small tablet styles*/
+
+@media screen and (min-width: 576px) {
+
+}
+
+/* Medium tablet styles */
+
+@media screen and (min-width: 760px) {
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;    
+  }
+
+  nav {
+    padding: 0 2em;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .menu-container {
+    display: block;
+  }
+
+  .menu-item {
+    display: block;
+    width: auto;
+    padding: 1em;
+  }  
+
+  .menu-item a {
+    padding: 0.2em 0.5em;
+  }
+
+  .border {
+    border: none;
+  }
+
+}
+
+/* Large tablets and laptops */
+
+@media screen and (min-width: 992px) {
+
+  body {
+    font-size: 1.2em;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1em;    
+  }
+
+  #dev-skills {
+    justify-content: center;
+  }
+
+}
+
+/* Desktop styles */
+@media screen and (min-width: 1200px) {
+
+  .menu li {
+    padding: 1em 2em;
+  } 
+
+  #about {
+    padding: 3em;
+  }
+
+  .transferable-skills {
+    margin: 3em 0;
+  }
+
+  #work {
+    padding: 3em 2em;
+  }
+
+  .projects {
+    margin-top: 3em;
+  }
+
+  .project-card {
+    margin-bottom: 1em;
+  }
+
+  #contact {
+    padding: 3em;
+  }
+  
+}
+
+
+
+
+
+
