@@ -143,9 +143,9 @@ a {
 
 /* Social Section */
 #social {  
-  padding: 2.5em 0.5em 1em;
+  padding: 2.5em 0.5em 0.5em;
   background: var(--primary-color);
-  border-bottom: 0.5px solid var(--primary-darker);   
+  /* border-bottom: 0.5px solid var(--primary-darker);    */
 }
 
 #social ul {
@@ -160,13 +160,8 @@ a {
 #social li {
   margin: 0.5em;
   padding: 0.5em;
-border: 0.5px solid var(--primary-dark);
-  border-radius: 50%;
-}
-
-#social li:hover {
-  background: var(--primary-lighter);
-  border: none;
+/* border: 0.5px solid var(--primary-dark);
+  border-radius: 50%; */
 }
 
 #social img {
@@ -181,6 +176,7 @@ nav {
   padding: 0 0.5;
   background: var(--primary-color);
   color: var(--primary-font-color);
+  border-top: 0.5px solid var(--primary-darker); 
   border-bottom: 8px solid var(--primary-lighter);
   text-transform: uppercase;
   }
@@ -268,6 +264,11 @@ nav {
   border-bottom: 8px solid var(--primary-lighter); 
 }
 
+.btn-cv:hover {
+  background: none;
+  color: var(--secondary-font-color);
+}
+
 /* Dev-Skills Sections*/
 
 #dev-skills {
@@ -347,16 +348,24 @@ nav {
 }
 
 .email {
-  margin-top: 0.1em;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.mail-icon {
+  margin-right: 0.2em;
   padding: 0;
-  color: var(--primary-darker);
+  color: var(--primary-font-color);
+  font-size: 2em;
 }
 
 /* Footer */
 
 #main-footer {
   padding: 2em;
-  border-top: 8px solid var(--primary-darker);
+  border-top: 8px solid var(--primary-lighter);
   text-align: center;
 }
 
@@ -419,16 +428,24 @@ nav {
 
 /* Large tablets and laptops */
 
-@media screen and (min-width: 992px) {
-
-  body {
-    font-size: 1.2em;
-  }
+@media screen and (min-width: 992px) { 
 
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     column-gap: 1em;    
+  }
+
+  .content-container {
+    margin: 0 20em;
+  }
+
+  .card-title {
+    min-height: 74px;
+  }
+
+  #work {
+    padding: 2em 1em;
   }
 
   #dev-skills {
@@ -439,6 +456,14 @@ nav {
 
 /* Desktop styles */
 @media screen and (min-width: 1200px) {
+
+ body {
+    font-size: 1.2em;
+  }
+
+  .content-container {
+    margin: 0 20em;
+  }
 
   .menu li {
     padding: 1em 2em;
@@ -468,6 +493,23 @@ nav {
     padding: 3em;
   }
   
+}
+
+/* XXL screen styles */
+
+@media screen and (min-width: 1500px) {
+  .card-title {
+    min-height: auto;
+  }
+}
+
+
+@media screen and (min-width: 1700px) {
+
+  .content-container {
+    margin: 0 30em;
+  }
+
 }
 
 
