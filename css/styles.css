@@ -179,6 +179,7 @@ nav {
   border-top: 0.5px solid var(--primary-darker); 
   border-bottom: 8px solid var(--primary-lighter);
   text-transform: uppercase;
+  z-index: 1;
   }
 
 .menu {
@@ -284,6 +285,8 @@ nav {
 .devskills-tag {  
   margin: 0.3em;
   padding: 0.5em;
+  flex-grow: 1;
+  max-width: 9em;
   background: var(--secondary-darker);
   color: var(--primary-font-color);
   text-transform: uppercase;
@@ -308,6 +311,39 @@ nav {
   margin-bottom: 1em;
   background: var(--secondary-bg-color);
   box-shadow: 2px 2px 10px -3px rgba(52,58,64,0.99);
+}
+
+.img-container {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: var(--secondary-color);
+  border-bottom: 5px solid var(--primary-lighter);
+}
+
+.img-container:hover .overlay {
+  opacity: 0.95;
+}
+
+.overlay-content {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+
 }
 
 .card-content {
@@ -351,6 +387,10 @@ nav {
 #contact h1 {
   padding: 0;
   margin-bottom: 1em;
+}
+
+.material-icons.location-icon {
+  color: var(--primary-font-color);
 }
 
 .email {
