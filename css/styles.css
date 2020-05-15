@@ -253,6 +253,14 @@ nav {
   margin-bottom: 2em;
 }
 
+.dev-card a {
+  color: var(--primary-darker);
+  text-decoration: underline;
+}
+
+.dev-card a:hover {
+  color: var(--primary-color);
+}
 
 .material-icons {
   color: var(--primary-color);
@@ -376,6 +384,16 @@ nav {
   color: var(--secondary-darker);
 }
 
+.checklist {
+  list-style-type: '\2713';
+  text-align: left;
+  padding: 1em;
+}
+
+.checklist li {
+  margin: 0.5em;
+}
+
 /* Contact Section */
 
 #contact {
@@ -410,9 +428,23 @@ nav {
 /* Footer */
 
 #main-footer {
-  padding: 2em;
+  padding: 2em 1em 0.5em;
   border-top: 8px solid var(--primary-lighter);
   text-align: center;
+}
+
+.arrow-up {
+  margin: 1em;
+  padding: 0;
+  color: var(--primary-font-color);
+  font-size: 2em;
+  background: var(--secondary-darker);
+  border-radius: 50%;
+}
+
+.arrow-up:hover {
+  background: var(--primary-bg-color);
+  color: var(--secondary-color);
 }
 
 
@@ -433,9 +465,11 @@ nav {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    column-gap: 1em;    
+    justify-items: center;
+    justify-content: center;
+    column-gap: 0.5em;    
   }
-
+ 
   .content-container {
     margin: 0 4em;
   }
@@ -470,6 +504,26 @@ nav {
     border: none;
   }
 
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    justify-content: center;    
+    column-gap: 0.5em;    
+  }
+
+  .chatapp-card, .myflix-card {
+    grid-column: 1 / 3;
+  }
+
+  .meetup-card {
+grid-column: 3 / 4;
+grid-row: 1 / 2;
+  }
+
+  .arrow-up {
+    display: none;
+  }
 }
 
 /* Large tablets and laptops */
@@ -479,7 +533,7 @@ nav {
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    column-gap: 1em;    
+    column-gap: 0.5em;    
   }
 
   .content-container {
@@ -497,7 +551,6 @@ nav {
   #dev-skills {
     justify-content: center;
   }
-
 }
 
 /* Desktop styles */
@@ -529,6 +582,26 @@ nav {
 
   .projects {
     margin-top: 3em;
+  }
+
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  .chatapp-card {
+   grid-column: 1 / 3;
+   grid-row: 1 / 3;
+  }
+  
+  .myflix-card {
+    grid-column: 3 / 5;
+    grid-row: 1 / 3;
+  }
+
+  .meetup-card {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
   }
 
   .project-card {

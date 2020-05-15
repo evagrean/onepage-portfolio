@@ -86,7 +86,7 @@
       <!-- Transferable Skills cards -->
       <div class="transferable-skills grid">
 
-        <div class="card skills-card">
+        <div class="card skills-card dev-card">
           <div class="development-icon">
             <span class="material-icons">
               code
@@ -96,9 +96,12 @@
             <div class="card-title">
               <h3>I am a certified web developer</h3>
             </div>
-            <p>I completed a 7 month full-stack web development Bootcamp, with the guidance of a personal tutor and
+            <p>I completed a seven month full-stack web development Bootcamp, with the guidance of a personal tutor and
               mentor.
-              Amongst others I built a native chat app, and a full-stack project with MERN stack.
+              Amongst others I built a <a href="#chatapp">Native Chat App</a>, as well as a <a href="#myflix">Full-Stack
+                Project</a> using the MERN
+              stack.
+
             </p>
           </div>
         </div>
@@ -177,8 +180,8 @@
     </section>
     <section id="work">
       <h1 class="work-title">Work</h1>
-      <div class="projects grid">
-        <div class="card project-card">
+      <div class="projects projects-grid">
+        <div class="card project-card chatapp-card" id="chatapp">
           <div class="info-container">
             <img class="project-img" src="assets/chatapp.png" alt="project-img">
             <div class="overlay">
@@ -190,16 +193,21 @@
           <div class="card-content">
             <h3 class="project-title">Native Chat App</h3>
             <p>A chat app for mobile devices built with React Native. It provides users with a chat interface and
-              the possibility to share images and their location.
+              the possibility to share images and their location. Lorem ipsum dolor sit amet, consectetur adipisicing
+              elit. Doloremque magni vel sapiente fugiat magnam in unde velit dolorum commodi, necessitatibus delectus
+              cumque voluptates neque dolorem accusamus quod distinctio, minima eaque repellendus dicta, odio cum
+              tenetur! Asperiores tempora voluptatem, sequi ipsum vel repellat! Aliquam ab et corporis quisquam qui,
+              labore eaque doloremque, suscipit atque provident natus repudiandae nobis. Cum exercitationem delectus
+              aperiam commodi neque, perspiciatis sunt minima sapiente adipisci facilis quam voluptatem id? Eos expedita
+              sapiente dolores ut voluptatum aliquam delectus officia repellat quas, quia officiis cumque suscipit
+              possimus reprehenderit vitae maiores veritatis quo fugiat vero animi molestiae. Odio, maxime commodi!
             </p>
           </div>
-
-
           <div class="project-links"><a href="https://github.com/evagrean/chat-app" target="_blank">Code</a><a
               href="https://evagrean.github.io/chat-app-demo/" target="_blank">Demo</a></div>
 
         </div>
-        <div class="card project-card">
+        <div class="card project-card myflix-card" id="myflix">
           <div class="info-container">
             <img src="assets/myflix.png" alt="project-img">
             <div class="overlay">
@@ -210,13 +218,13 @@
             <h3 class="project-title">MyFlix Movie App </h3>
             <p>A web app that provides users with access to information about different movies, directors and
               genres. Users are able to sign up, update personal information and create a list of favorite movies.
+              <a href="https://github.com/evagrean/myFlix-app#endpoints">Endpoints</a>
             </p>
-
           </div>
           <div class="project-links"><a href="https://github.com/evagrean/myFlix-app" target="_blank">Code</a><a
               href="https://my-flix-evagrean.herokuapp.com/client" target="_blank">Demo</a></div>
         </div>
-        <div class="card project-card">
+        <div class="card project-card meetup-card">
           <div class="info-container">
             <img src="assets/meetup.png" alt="project-img">
             <div class="overlay">
@@ -225,25 +233,29 @@
           </div>
           <div class="card-content">
             <h3 class="project-title">Meetup App</h3>
-            <p>A serverless, progressive web app (PWA) built with React using a test-driven development (TDD) technique.
-              It uses the Meetup API to fetch upcoming events for a selected city.
+            <p>A serverless, progressive web app (PWA) built with React using a test-driven development technique (TDD).
+              The app uses the Meetup API to fetch upcoming events for a selected city, and OAuth2 authentication flow.
+              For the authorization server it uses AWS Lambda. Alerts for users are created by using an OOP approach. A
+              service worker allows the app to work offline. The recharts library is used to visualize data with a
+              scatter graph and a pie chart.
             </p>
 
           </div>
           <div class="project-links"><a href="https://github.com/evagrean/meetup-app" target="_blank">Code</a><a
               href="https://evagrean.github.io/meetup-app/" target="_blank">Demo</a></div>
         </div>
+
         <div class="card project-card">
-          <div class="info-container">
-            <img src="assets/portfolio.png" alt="project-img">
-            <div class="overlay">
-              <div class="overlay-content"><a href="#">Read more about this project</a></div>
-            </div>
-          </div>
+
+          <img src="assets/portfolio.png" alt="project-img">
+
           <div class="card-content">
             <h3 class="project-title">Portfolio Website</h3>
-            <p>A responsive onepage website built with a mobile-first approach using pure HTML, CSS and a tiny bit of
-              Javascript. The website showcases my professional portfolio.
+            <p>A responsive onepager to showcase my professional portfolio, designed following a mobile-first approach.
+              It is built with pure HTML, CSS and some snippets of Javascript to toggle the hamburger menu on mobile
+              screens. The CSS code uses native variables for repetitive values. A postprocessor was used to improve
+              browser support.
+
             </p>
 
           </div>
@@ -255,10 +267,9 @@
           <img src="assets/pokedex.png" alt="project-img">
           <div class="card-content">
             <h3 class="project-title">Pokedex App</h3>
-            <p>A small web app built using Javascript, HTML, CSS, jQuery and Bootstrap framework. Users can search
+            <p>A small web app built with Javascript, HTML, CSS, jQuery, and Bootstrap framework. Users can search
               through a pokemon collection that is loading from an external API. Details can be displayed in a modal by
-              clicking on a
-              pockemon's name.</p>
+              clicking on a pokemon's name. The code has been formatted according to ESLint rules. </p>
 
           </div>
           <div class="project-links"><a href="https://github.com/evagrean/pokedex-app-jQuery" target="_blank">Code</a><a
@@ -268,9 +279,10 @@
           <img src="assets/quizapp.png" alt="project-img">
           <div class="card-content">
             <h3 class="project-title">Quiz App</h3>
-            <p>A basic app to practise Angular framework and TypeScript. The application presents users with multiple
-              choice questions on various topics. Once users have answered all the questions, their results will be
-              displayed.
+            <p>A basic single-page app to practice Angular framework and TypeScript. The application presents users with
+              multiple choice questions on various topics. Once users have answered all the questions, their results
+              will be displayed. It uses Angular Material for the UI layout and Angular Flex Layout Module to ensure
+              responsibility.
             </p>
 
           </div>
@@ -281,8 +293,9 @@
           <img src="assets/todo.png" alt="project-img">
           <div class="card-content">
             <h3 class="project-title">Todo App</h3>
-            <p>A simple todo-list app to practice the Vue.js framework. A User can add and delete todos, edit them and
-              mark them as completed.
+            <p>Last but not least – an absolute classic hit: A basic todo-list app to practice the Vue.js framework. A
+              user can add and delete todos, edit them and mark them as completed. Vue Material is incorporated for its
+              visual design.
             </p>
 
           </div>
@@ -292,10 +305,17 @@
         <div class="card project-card">
           <img src="assets/placeholder-img.jpg" alt="project-img">
           <div class="card-content">
-            <h3 class="project-title">Coming Soon</h3>
-            <p>There are still a lot of ideas I am excited to realize.
+            <h3 class="project-title">Work in Progress</h3>
+            <ul class="checklist">
+              <li>Commit to the #100DaysOfCode challenge on twitter to keep coding</li>
+              <li>Contribute to open source projects to improve my skills</li>
+              <li>Build another Vue.js project because currently it's the most growing JS framework</li>
+              <li>Build another Angular project to gain more experience with this huge framework</li>
 
-            </p>
+            </ul>
+
+
+
 
           </div>
           <!-- <div class="project-links"><a href="https://github.com/evagrean/todo-app" target="_blank">Code</a><a
@@ -338,6 +358,9 @@
   <footer id="main-footer">
     <p class="credit">&copy; Copyright 2020</p>
     <p>Designed and developed by Eva Greiner-Anzenbacher</p>
+    <a href="#showcase"><span class="material-icons arrow-up">
+        keyboard_arrow_up
+      </span></a>
   </footer>
   <script src="js/scripts.js"></script>
 </body>
