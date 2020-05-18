@@ -159,7 +159,8 @@
 
 
       </div>
-      <a href="" class="btn btn-cv">Download my CV</a>
+      <a href="https://www.linkedin.com/in/eva-greiner-anzenbacher/" class="btn btn-cv" target="_blank">View my LinkedIn
+        Profile</a>
     </section>
     <section id="dev-skills">
       <span class="devskills-tag">javascript</span>
@@ -192,16 +193,38 @@
           </div>
           <div class="card-content">
             <h3 class="project-title">Native Chat App</h3>
-            <p>A chat app for mobile devices built with React Native. It provides users with a chat interface and
-              the possibility to share images and their location. Lorem ipsum dolor sit amet, consectetur adipisicing
-              elit. Doloremque magni vel sapiente fugiat magnam in unde velit dolorum commodi, necessitatibus delectus
-              cumque voluptates neque dolorem accusamus quod distinctio, minima eaque repellendus dicta, odio cum
-              tenetur! Asperiores tempora voluptatem, sequi ipsum vel repellat! Aliquam ab et corporis quisquam qui,
-              labore eaque doloremque, suscipit atque provident natus repudiandae nobis. Cum exercitationem delectus
-              aperiam commodi neque, perspiciatis sunt minima sapiente adipisci facilis quam voluptatem id? Eos expedita
-              sapiente dolores ut voluptatum aliquam delectus officia repellat quas, quia officiis cumque suscipit
-              possimus reprehenderit vitae maiores veritatis quo fugiat vero animi molestiae. Odio, maxime commodi!
-            </p>
+            <p>A chat app for mobile devices built with React-Native. It provides users with a chat interface where they
+              can send/receive text messages and images as well as share their location.</p>
+            <div class="read-more-chatapp">
+              <h4>Technical Data</h4>
+              <p>I used Expo.io to develop the app. It is optimized for both Androd and iOS devices. The chat interface
+                and functionallity I created using the Gifted Chat library.
+              </p>
+              <p>
+                To store the chat messages, I used the Google Firestore Database. Images are stored in Firebase Cloud
+                Storage. To make the chat conversations available offline , I used asyncStorage to store them locally.
+                When users are offline, theiy can’t create new messages (using Gifted Chat’s renderInputToolbar prop). I
+                used Google Firebase authentication to authenticate users anonymously.<br><br>
+                <a href="https://github.com/evagrean/chat-app#prerequisites" class="setup-link" target="_blank"><span
+                    class="material-icons arrow-right">
+                    arrow_right
+                  </span><span>View project
+                    setup
+                    manual</span></a>
+              </p>
+              <h4>Error handling</h4>
+              <p>
+                During development, I ran into a few difficulties, often caused by outdated combinations of packages or
+                dependencies. Amongst others, I had to research the correct version of NetInfo to get the app up and
+                running and also had to install Base64 encoder/decoder to handle `atob()` and `botoa()` issues.
+              </p>
+              <h4>Conclusion</h4>
+              <p>This chat app was the final project for my full-stack web development bootcamp. Besides all
+                difficulties, I realized how I grew in handling problems and solving bugs independently. I improved in
+                figuring out what search terms to use when trying to find an answer with Google. I got a solid grasp of
+                when it might help to temporary set a console.log() to know what’s going on.</p>
+            </div>
+            <div class="btn-toggle btn-toggle-chatapp btn">Read more</div>
           </div>
           <div class="project-links"><a href="https://github.com/evagrean/chat-app" target="_blank">Code</a><a
               href="https://evagrean.github.io/chat-app-demo/" target="_blank">Demo</a></div>
@@ -216,10 +239,50 @@
           </div>
           <div class="card-content">
             <h3 class="project-title">MyFlix Movie App </h3>
-            <p>A web app that provides users with access to information about different movies, directors and
-              genres. Users are able to sign up, update personal information and create a list of favorite movies.
-              <a href="https://github.com/evagrean/myFlix-app#endpoints">Endpoints</a>
+            <p>A web app that provides users with access to information about different movies, directors, and genres.
+              Users can sign up, update personal information, and create a list of favorite movies. Server-side and
+              client-side of this application were developed using the MERN stack.
             </p>
+            <div class="read-more-myflix">
+              <h4>Server-Side</h4>
+              <p>
+                I created a RESTful API using Node.js and Express, that interacts with a non-relational database
+                (MongoDB). The API can be accessed via commonly used HTTP methods like GET or POST. To retrieve data
+                from
+                and store data in the database, CRUD methods are used. The API provides movie information in JSON
+                format.
+                <br><br>
+                <a href="https://github.com/evagrean/myFlix-app#endpoints" class="endpoint-link" target="_blank">
+                  <span class="material-icons arrow-right">
+                    arrow_right
+                  </span><span>View
+                    endpoints</span></a>
+              </p>
+              <p>
+                To test the API, I used Postman. I also included user authentication and authorization code in the form
+                of
+                basic HTTP authentication and JWT authentication.
+              </p>
+              <h4>Client-Side</h4>
+              <p>
+                After completing the API, I started to build the interface users would need when making requests to, and
+                receiving responses from, the server-side. It is a single-page, responsive application, developed with
+                React and React-Redux. It provides several interface views, including, but not limited to, a main view
+                (shows a list of all movies), single movie view (shows data about a single movie and allows users to add
+                the movie to their list of favorites), a login view, a registration view and a profile view (where users
+                can update their user data and list of favorites).
+              </p>
+              <h4>Conclusion</h4>
+              <p>
+                This was both my favorite and most challenging project. I have enjoyed building the
+                API and working with database structures. I also quickly became familiar with using the terminal.
+                Developing the client-side, it took me a while to understand how React and Redux
+                work and how to achieve the desired results. But with the help of my great tutor and
+                after a pair-programming session with an experienced developer, I could conquer that mountain.
+              </p>
+            </div>
+            <div class="btn-toggle btn-toggle-myflix btn">Read more</div>
+
           </div>
           <div class="project-links"><a href="https://github.com/evagrean/myFlix-app" target="_blank">Code</a><a
               href="https://my-flix-evagrean.herokuapp.com/client" target="_blank">Demo</a></div>
@@ -252,9 +315,10 @@
           <div class="card-content">
             <h3 class="project-title">Portfolio Website</h3>
             <p>A responsive onepager to showcase my professional portfolio, designed following a mobile-first approach.
-              It is built with pure HTML, CSS and some snippets of Javascript to toggle the hamburger menu on mobile
-              screens. The CSS code uses native variables for repetitive values. A postprocessor was used to improve
-              browser support.
+              It is built with pure HTML, CSS (grid, flexbox) and some snippets of Javascript to toggle a hamburger
+              menu and read-more buttons. The CSS code uses native variables for repetitive values. A postprocessor was
+              used to
+              improve browser support.
 
             </p>
 

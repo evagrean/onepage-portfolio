@@ -145,7 +145,6 @@ a {
 #social {  
   padding: 2.5em 0.5em 0.5em;
   background: var(--primary-color);
-  /* border-bottom: 0.5px solid var(--primary-darker);    */
 }
 
 #social ul {
@@ -255,11 +254,14 @@ nav {
 
 .dev-card a {
   color: var(--primary-darker);
-  text-decoration: underline;
-}
+  }
 
 .dev-card a:hover {
-  color: var(--primary-color);
+  color: var(--primary-dark);
+}
+
+.dev-card a:active {
+  color: var(--primary-dark);
 }
 
 .material-icons {
@@ -356,10 +358,86 @@ nav {
 
 .card-content {
   flex: auto;
+  padding: 1em 1.5em 0;
 }
 
 .card-content p {
   margin-top: 1em;
+  padding: 0;
+  text-align: left;
+}
+
+.project-links a:hover {
+  background: none;
+  color: var(--secondary-darker);
+}
+
+.myflix-card h4, .chatapp-card h4 {
+  text-align: left;
+  padding: 0;
+  margin-top: 1em;
+}
+
+.btn-toggle {
+  margin: 1em 0;
+  padding: 0;
+  color: var(--secondary-font-color);
+  background: none;
+  font-size: 0.8em;
+  cursor: pointer;
+}
+
+.btn-toggle:hover {
+  background: none;
+  color: var(--secondary-font-color);
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.btn-toggle:active {
+  background: var(--primary-bg-color);
+  color: var(--secondary-font-color);
+}
+
+.read-more-chatapp,
+.read-more-myflix {
+  display: none;
+}
+
+.read-more-chatapp.visible,
+.read-more-myflix.visible {
+  display: block;
+}
+
+.endpoint-link,
+.setup-link {
+  display: flex;
+  align-items: center;
+  color: var(--primary-darker);
+  /* font-weight: bold; */
+}
+
+.arrow-right {
+  font-size: 1em;
+}
+
+.endpoint-link:hover,
+.setup-link:hover {
+  color: var(--primary-dark);
+}
+
+.endpoint-link:active,
+.setup-link:active {
+  color: var(--primary-dark);
+}
+
+.checklist {
+  list-style-type: '\2713';
+  text-align: left;
+margin-top: 1em;
+}
+
+.checklist li {
+  margin: 0.5em;
 }
 
 .project-links {
@@ -379,20 +457,7 @@ nav {
   text-transform: uppercase;
 }
 
-.project-links a:hover {
-  background: none;
-  color: var(--secondary-darker);
-}
 
-.checklist {
-  list-style-type: '\2713';
-  text-align: left;
-  padding: 1em;
-}
-
-.checklist li {
-  margin: 0.5em;
-}
 
 /* Contact Section */
 
