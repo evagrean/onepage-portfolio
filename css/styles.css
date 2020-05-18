@@ -323,39 +323,6 @@ nav {
   box-shadow: 2px 2px 10px -3px rgba(52,58,64,0.99);
 }
 
-.info-container {
-  position: relative;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: var(--secondary-color);
-  border-bottom: 5px solid var(--primary-lighter);
-}
-
-.info-container:hover .overlay {
-  opacity: 0.95;
-}
-
-.overlay-content {
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-
-}
-
 .card-content {
   flex: auto;
   padding: 1em 1.5em 0;
