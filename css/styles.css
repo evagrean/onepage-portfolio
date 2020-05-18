@@ -85,6 +85,7 @@ a {
   border: 1px solid var(--primary-font-color);
   text-decoration: none;
   text-transform: uppercase;
+  transition-duration: 0.3s;
 }
 
 .btn:hover {
@@ -215,6 +216,7 @@ nav {
   padding: 0.5em 0.2em;
   width: 100%;
   text-align: center;
+  transition-duration: 0.3s;
 }
 
 .menu-item:hover {
@@ -260,6 +262,15 @@ nav {
 
 .skills-card {
   margin-bottom: 2em;
+  text-align: center;
+}
+
+.card-text {
+  padding: 1em;
+}
+
+.card-text p {
+  margin-top: 1em;
 }
 
 .dev-card a {
@@ -343,11 +354,6 @@ nav {
   text-align: left;
 }
 
-.project-links a:hover {
-  background: none;
-  color: var(--secondary-darker);
-}
-
 .myflix-card h4,
 .chatapp-card h4 {
   text-align: left;
@@ -411,7 +417,6 @@ nav {
   padding-bottom: 2em;
   list-style-type: '\2713';
   text-align: left;
- 
 }
 
 .checklist li {
@@ -433,6 +438,12 @@ nav {
   color: var(--primary-font-color);
   border-bottom: 5px solid var(--secondary-darker);
   text-transform: uppercase;
+  transition-duration: 0.3s;
+}
+
+.project-links a:hover {
+  background: none;
+  color: var(--secondary-darker);
 }
 
 /* Contact Section */
@@ -491,7 +502,7 @@ nav {
 /* Small tablet styles */
 
 @media screen and (min-width: 576px) {
-  #social {
+  .social {
     padding: 5em 0.5em 1em;
   }
 }
@@ -511,7 +522,7 @@ nav {
     margin: 0 4em;
   }
 
-  #social {
+  .social {
     padding: 8em 0.5em 1em;
   }
 
