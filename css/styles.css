@@ -155,12 +155,12 @@ a {
 }
 
 /* Social Section */
-#social {
+.social {
   padding: 2.5em 0.5em 0.5em;
   background: var(--primary-color);
 }
 
-#social ul {
+.social ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -169,12 +169,12 @@ a {
   list-style: none;
 }
 
-#social li {
+.social li {
   margin: 0.5em;
   padding: 0.5em;
 }
 
-#social img {
+.social img {
   height: 1.2em;
   width: 1.2em;
 }
@@ -407,9 +407,11 @@ nav {
 }
 
 .checklist {
+  margin-top: 1em;
+  padding-bottom: 2em;
   list-style-type: '\2713';
   text-align: left;
-  margin-top: 1em;
+ 
 }
 
 .checklist li {
