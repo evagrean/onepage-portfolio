@@ -9,8 +9,19 @@ let hamburger = document.querySelector('.hamburger');
 
 hamburger.addEventListener('click', toggleMenu);
 
+// Hide mobile menu after a menu item has been clicked
 
-// toggle read more chatapp
+function hideMenu() {
+  let menu = document.querySelector('.menu-container');
+  if (menu.classList.contains('visible')) {
+    menu.classList.remove('visible');
+  }
+}
+
+menuList = document.querySelector('.menu');
+menuList.addEventListener('click', hideMenu);
+
+// Toggle read more chatapp
 
 function readMoreChatapp() {
   let moreChatapp = document.querySelector('.read-more-chatapp');
@@ -28,7 +39,7 @@ let chatappBtn = document.querySelector('.btn-toggle-chatapp');
 
 chatappBtn.addEventListener('click', readMoreChatapp);
 
-// toggle read more myflix
+// Toggle read more myflix
 
 function readMoreMyflix() {
   let moreMyflix = document.querySelector('.read-more-myflix');
