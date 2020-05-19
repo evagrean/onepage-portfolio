@@ -12,23 +12,37 @@ hamburger.addEventListener('click', toggleMenu);
 
 // toggle read more chatapp
 
-function toggleChatapp() {
-  let readChatapp = document.querySelector('.read-more-chatapp');
-  readChatapp.classList.toggle('visible');
+function readMoreChatapp() {
+  let moreChatapp = document.querySelector('.read-more-chatapp');
+  let chatappBtn = document.querySelector('.btn-toggle-chatapp');
+  moreChatapp.classList.toggle('visible');
+
+  if (moreChatapp.classList.contains('visible')) {
+    chatappBtn.innerHTML = 'Read less';
+  } else {
+    chatappBtn.innerHTML = 'Read more';
+  }
 }
 
 let chatappBtn = document.querySelector('.btn-toggle-chatapp');
 
-chatappBtn.addEventListener('click', toggleChatapp);
+chatappBtn.addEventListener('click', readMoreChatapp);
 
 // toggle read more myflix
 
-function toggleMyflix() {
-  let readMyflix = document.querySelector('.read-more-myflix');
-  readMyflix.classList.toggle('visible');
+function readMoreMyflix() {
+  let moreMyflix = document.querySelector('.read-more-myflix');
+  let myflixBtn = document.querySelector('.btn-toggle-myflix');
+  moreMyflix.classList.toggle('visible');
+
+  if (moreMyflix.classList.contains('visible')) {
+    myflixBtn.innerHTML = 'Read less';
+  } else {
+    myflixBtn.innerHTML = 'Read more';
+  }
 }
 
 let myflixBtn = document.querySelector('.btn-toggle-myflix');
 
-myflixBtn.addEventListener('click', toggleMyflix);
+myflixBtn.addEventListener('click', readMoreMyflix);
 
