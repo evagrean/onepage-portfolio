@@ -299,7 +299,7 @@ nav {
 /* About Section */
 
 #about {
-  padding: 2em 0.5em;
+  padding: 5em 0.5em 2em;
   background: #fff;
   color: #343a40;
 }
@@ -383,7 +383,7 @@ nav {
 /* Work Section */
 
 #work {
-  padding: 2em 0.5em;
+  padding: 5em 0.5em 2em;
   background: #f9f6f7;
   color: #343a40;
 }
@@ -701,7 +701,7 @@ nav {
   }
 
   #work {
-    padding: 2em 1em;
+    padding: 5em 1em 2em;
   }
 
   #dev-skills {
@@ -726,7 +726,7 @@ nav {
   }
 
   #about {
-    padding: 3em;
+    padding: 5em 2em 2em;
   }
 
   .transferable-skills {
@@ -734,7 +734,7 @@ nav {
   }
 
   #work {
-    padding: 3em 2em;
+    padding: 5em 2em;
   }
 
   .projects {
