@@ -560,16 +560,6 @@ nav {
     column-gap: 0.5em;
   }
 
-  .chatapp-card,
-  .myflix-card {
-    grid-column: 1 / 3;
-  }
-
-  .meetup-card {
-    grid-column: 3 / 4;
-    grid-row: 1 / 2;
-  }
-
   .arrow-up {
     display: none;
   }
@@ -634,21 +624,6 @@ nav {
   .projects-grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .chatapp-card {
-    grid-column: 1 / 3;
-    grid-row: 1 / 3;
-  }
-
-  .myflix-card {
-    grid-column: 3 / 5;
-    grid-row: 1 / 3;
-  }
-
-  .meetup-card {
-    grid-column: 1 / 2;
-    grid-row: 3 / 4;
   }
 
   .project-card {

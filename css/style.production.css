@@ -674,22 +674,6 @@ nav {
     column-gap: 0.5em;
   }
 
-  .chatapp-card,
-  .myflix-card {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / 3;
-  }
-
-  .meetup-card {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3 / 4;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 1;
-    grid-row: 1 / 2;
-  }
-
   .arrow-up {
     display: none;
   }
@@ -762,33 +746,6 @@ nav {
     display: grid;
     -ms-grid-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-
-  .chatapp-card {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 2;
-    grid-column: 1 / 3;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
-  }
-
-  .myflix-card {
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 2;
-    grid-column: 3 / 5;
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 2;
-    grid-row: 1 / 3;
-  }
-
-  .meetup-card {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 1;
-    grid-column: 1 / 2;
-    -ms-grid-row: 3;
-    -ms-grid-row-span: 1;
-    grid-row: 3 / 4;
   }
 
   .project-card {
