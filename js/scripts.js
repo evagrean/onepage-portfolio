@@ -57,3 +57,13 @@ let myflixBtn = document.querySelector('.btn-toggle-myflix');
 
 myflixBtn.addEventListener('click', readMoreMyflix);
 
+// Add active class to currently clicked menu-item
+let menuItems = document.querySelectorAll('.menu-item');
+
+menuItems.forEach(menuItem => {
+  menuItem.addEventListener('click', function () {
+    menuItems.forEach(item => item.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+

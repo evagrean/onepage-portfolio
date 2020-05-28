@@ -223,6 +223,10 @@ nav {
   background: var(--secondary-color);
 }
 
+.menu-item.active {
+  background: var(--secondary-color);
+}
+
 .border {
   border-bottom: 0.5px solid var(--primary-darker);
 }
