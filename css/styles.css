@@ -503,6 +503,42 @@ nav {
   color: var(--secondary-color);
 }
 
+/* Case Study Page */
+.case-header {
+  border-bottom: 8px solid var(--primary-color);
+  padding: 1.5em;
+  text-align: left;
+}
+
+.back-link {
+  text-decoration: none;
+  color: var(--primary-font-color);
+  font-size: 1.5em;
+}
+
+.back-link:hover {
+  color: var(--primary-lighter);
+}
+
+.case-study {
+  padding: 2em;
+  text-align: left;
+}
+
+.case-study h1 {
+  padding: 1.2em;
+  line-height: 1.2em;
+  text-align: center;
+}
+
+.case-study div {
+  padding: 1.2em;
+}
+
+.approach h3 {
+  margin-top: 1em;
+}
+
 /* Small tablet styles */
 
 @media screen and (min-width: 576px) {
@@ -636,6 +672,10 @@ nav {
 
   #contact {
     padding: 3em;
+  }
+
+  .case-study {
+    margin: 0 10em;
   }
 }
 
