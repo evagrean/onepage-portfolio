@@ -1,6 +1,7 @@
 :root {
   --primary-color: #e35760;
   --primary-lighter: #e5676f;
+  --primary-light: #fceff0;
   --primary-darker: #cc4e56;
   --primary-dark: #b7464d;
   --secondary-color: #343a40;
@@ -504,10 +505,24 @@ nav {
 }
 
 /* Case Study Page */
+
+.case-body {
+  background: var(--primary-bg-color);
+  color: var(--secondary-font-color);
+}
+
+.myflix-style {
+  background: var(--primary-light);
+}
+
 .case-header {
-  border-bottom: 8px solid var(--primary-color);
+  position: sticky;
+  top: 0;
   padding: 1.5em;
+  background: var(--primary-color);
+  border-bottom: 8px solid var(--primary-lighter);
   text-align: left;
+  z-index: 1;
 }
 
 .back-link {
@@ -517,7 +532,7 @@ nav {
 }
 
 .back-link:hover {
-  color: var(--primary-lighter);
+  color: var(--secondary-color);
 }
 
 .case-study {
@@ -531,12 +546,48 @@ nav {
   text-align: center;
 }
 
-.case-study div {
-  padding: 1.2em;
+.intro img,
+.server-img img,
+.client-img img {
+  box-shadow: 2px 2px 10px -3px rgba(52, 58, 64, 0.99);
 }
 
-.approach h3 {
-  margin-top: 1em;
+.intro-img,
+.server-img,
+.client-img {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.server-side {
+  margin-top: 1.5em;
+}
+
+.server-img img,
+.client-img img {
+  margin-bottom: 1em;
+}
+
+.client-content {
+  padding-top: 0;
+}
+
+.challenges,
+.duration,
+.credits {
+  margin-top: 1.5em;
+}
+
+.social.case-social {
+  padding-top: 1em;
+}
+
+.case-footer {
+  padding: 2em 1em 0.5em;
+  background: var(--secondary-color);
+  color: var(--primary-font-color);
+  border-top: 8px solid var(--primary-lighter);
+  text-align: center;
 }
 
 /* Small tablet styles */
@@ -628,6 +679,47 @@ nav {
 
   #dev-skills {
     justify-content: center;
+  }
+
+  .intro {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .intro-content {
+    margin-right: 2em;
+    padding-top: 1em;
+  }
+
+  .intro img {
+    margin-left: 2em;
+  }
+
+  .approach-title {
+    margin-top: 1.5em;
+  }
+
+  .server-side {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+
+  .server-content {
+    margin-left: 2em;
+  }
+
+  .server-img {
+    margin-right: 2em;
+  }
+
+  .client-img {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .client-img img {
+    width: 95%;
   }
 }
 

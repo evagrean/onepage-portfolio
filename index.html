@@ -192,49 +192,6 @@
     <section id="work">
       <h1 class="work-title">Work</h1>
       <div class="projects projects-grid">
-        <div class="card project-card chatapp-card" id="chatapp">
-
-          <img class="project-img" src="assets/chatapp.png" alt="screenshots of chatapp start and chat screens">
-
-          <div class="card-content">
-            <h3 class="project-title">Native Chat App</h3>
-            <p>A chat app for mobile devices built with React-Native. It provides users with a chat interface where they
-              can send/receive text messages and images as well as share their location.</p>
-            <div class="read-more-chatapp">
-              <h4>Technical Data</h4>
-              <p>I used Expo.io to develop the app. It is optimized for both Android and iOS devices. The chat interface
-                and functionallity I created using the Gifted Chat library.
-              </p>
-              <p>
-                To store the chat messages, I used the Google Firestore Database. Images are stored in Firebase Cloud
-                Storage. To make the chat conversations available offline , I used asyncStorage to store them locally.
-                When users are offline, theiy can’t create new messages (using Gifted Chat’s renderInputToolbar prop). I
-                used Google Firebase authentication to authenticate users anonymously.<br><br>
-                <a href="https://github.com/evagrean/chat-app#prerequisites" class="setup-link" target="_blank"><span
-                    class="material-icons arrow-right">
-                    arrow_right
-                  </span><span>View project
-                    setup
-                    manual</span></a>
-              </p>
-              <h4>Error handling</h4>
-              <p>
-                During development, I ran into a few difficulties, often caused by outdated combinations of packages or
-                dependencies. Amongst others, I had to research the correct version of NetInfo to get the app up and
-                running and also had to install Base64 encoder/decoder to handle 'atob()' and 'botoa()' issues.
-              </p>
-              <h4>Conclusion</h4>
-              <p>This chat app was the final project for my full-stack web development bootcamp. Besides all
-                difficulties, I realized how I grew in handling problems and solving bugs independently. I improved in
-                figuring out what search terms to use when trying to find an answer with Google. I got a solid grasp of
-                when it might help to temporary set a console.log() to know what’s going on.</p>
-            </div>
-            <div class="btn-toggle btn-toggle-chatapp btn">Read more</div>
-          </div>
-          <div class="project-links"><a href="https://github.com/evagrean/chat-app" target="_blank">Code</a><a
-              href="https://evagrean.github.io/chat-app-demo/" target="_blank">Demo</a></div>
-
-        </div>
         <div class="card project-card myflix-card" id="myflix">
 
           <img src="assets/myflix.png" alt="screenshot of myflix movie list screen">
@@ -283,13 +240,58 @@
                 after a pair-programming session with an experienced developer, I could conquer that mountain.
               </p>
             </div>
-            <div class="btn-toggle btn-toggle-myflix btn">Read more</div>
+            <!-- <div class="btn-toggle btn-toggle-myflix btn">Read more</div> -->
 
           </div>
           <div class="project-links"><a href="https://github.com/evagrean/myFlix-app" target="_blank">Code</a><a
               href="https://my-flix-evagrean.herokuapp.com/client" target="_blank">Demo</a><a href="case.html"
               target="_blank">Case Study</a></div>
         </div>
+
+        <div class="card project-card chatapp-card" id="chatapp">
+
+          <img class="project-img" src="assets/chatapp.png" alt="screenshots of chatapp start and chat screens">
+
+          <div class="card-content">
+            <h3 class="project-title">Native Chat App</h3>
+            <p>A chat app for mobile devices built with React-Native. It provides users with a chat interface where they
+              can send/receive text messages and images as well as share their location.</p>
+            <div class="read-more-chatapp">
+              <h4>Technical Data</h4>
+              <p>I used Expo.io to develop the app. It is optimized for both Android and iOS devices. The chat interface
+                and functionallity I created using the Gifted Chat library.
+              </p>
+              <p>
+                To store the chat messages, I used the Google Firestore Database. Images are stored in Firebase Cloud
+                Storage. To make the chat conversations available offline , I used asyncStorage to store them locally.
+                When users are offline, theiy can’t create new messages (using Gifted Chat’s renderInputToolbar prop). I
+                used Google Firebase authentication to authenticate users anonymously.<br><br>
+                <a href="https://github.com/evagrean/chat-app#prerequisites" class="setup-link" target="_blank"><span
+                    class="material-icons arrow-right">
+                    arrow_right
+                  </span><span>View project
+                    setup
+                    manual</span></a>
+              </p>
+              <h4>Error handling</h4>
+              <p>
+                During development, I ran into a few difficulties, often caused by outdated combinations of packages or
+                dependencies. Amongst others, I had to research the correct version of NetInfo to get the app up and
+                running and also had to install Base64 encoder/decoder to handle 'atob()' and 'botoa()' issues.
+              </p>
+              <h4>Conclusion</h4>
+              <p>This chat app was the final project for my full-stack web development bootcamp. Besides all
+                difficulties, I realized how I grew in handling problems and solving bugs independently. I improved in
+                figuring out what search terms to use when trying to find an answer with Google. I got a solid grasp of
+                when it might help to temporary set a console.log() to know what’s going on.</p>
+            </div>
+            <div class="btn-toggle btn-toggle-chatapp btn">Read more</div>
+          </div>
+          <div class="project-links"><a href="https://github.com/evagrean/chat-app" target="_blank">Code</a><a
+              href="https://evagrean.github.io/chat-app-demo/" target="_blank">Demo</a></div>
+
+        </div>
+
         <div class="card project-card meetup-card">
           <img src="assets/meetup.png" alt="screenshot of meetup start screen">
 
