@@ -655,7 +655,7 @@ nav {
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5em 1fr;
+    -ms-grid-columns: 1fr 0.5em 1fr 0.5em;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     -webkit-box-pack: center;
@@ -729,8 +729,8 @@ nav {
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-columns: 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr 0.5em 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     -webkit-column-gap: 0.5em;
     -moz-column-gap: 0.5em;
     column-gap: 0.5em;

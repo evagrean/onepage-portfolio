@@ -610,7 +610,7 @@ nav {
 @media screen and (min-width: 992px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     column-gap: 0.5em;
   }
 
