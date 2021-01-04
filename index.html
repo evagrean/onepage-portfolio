@@ -1,430 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="This is the personal portfolio page of Eva Greiner-Anzenbacher. It showcases her work and skills as a full-stack web developer." />
+    <link rel="shortcut icon" type="image/png" href="assets/shortcut-icon-img.png" sizes="32x32" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link rel="stylesheet" href="css/style.production.css" />
+    <title>Eva Greiner-Anzenbacher - Web Developer Portfolio</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description"
-    content="This is the personal portfolio page of Eva Greiner-Anzenbacher. It showcases her work and skills as a full-stack web developer." />
-  <link rel="shortcut icon" type="image/png" href="assets/shortcut-icon-img.png" sizes="32x32">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito&family=Nunito+Sans&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.production.css">
-  <title>Eva Greiner-Anzenbacher - Web Developer Portfolio</title>
-</head>
+  <body>
+    <!-- Header Showcase -->
+    <header id="showcase">
+      <div class="box-one"></div>
 
-<body>
+      <div class="box-two">
+        <div class="img-container">
+          <img src="assets/portrait-e.png" class="portrait" alt="portrait of eva" />
+        </div>
+        <div class="content-container">
+          <h1>Hello, I'm Eva</h1>
+          <p>I am a web developer with background in content management and musicology. Currently I'm discovering the power of TypeScript. I'm always happy to apply new and proven skills to create beneficial solutions and high-quality code.</p>
 
-  <!-- Header Showcase -->
-  <header id="showcase">
-    <div class="box-one"></div>
-
-    <div class="box-two">
-      <div class="img-container">
-        <img src="assets/portrait-e.png" class="portrait" alt="portrait of eva">
-      </div>
-      <div class="content-container">
-        <h1>Hello, I'm Eva</h1>
-        <p>I am a web developer with background in content management and music
-          retail. I combine new and proven skills and let them flow into beneficial solutions and
-          high-quality code.</p>
-        <p>I'm currently looking for new opportunities in the Berlin area or remotely.</p>
-        <a href="#about" class="btn btn-more"><span class="btn-text">More about me <span
-              class="material-icons arrow-down">
-              arrow_downward
-            </span></span></a>
+          <a href="#about" class="btn btn-more"
+            ><span class="btn-text">More about me <span class="material-icons arrow-down"> arrow_downward </span></span></a
+          >
+        </div>
       </div>
 
-    </div>
+      <!-- Social Section -->
+      <section class="social">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/eva-greiner-anzenbacher/" target="_blank"><img src="assets/linkedin_dark-red.svg" alt="linkedin icon" /></a>
+          </li>
+          <li>
+            <a href="https://github.com/evagrean" target="_blank"><img src="assets/github_dark-red.svg" alt="github icon" /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/eva_grean" target="_blank"><img src="assets/twitter_dark-red.svg" alt="twitter icon" /></a>
+          </li>
+          <li>
+            <a href="https://dev.to/evagrean" target="_blank"><img src="assets/dev_dark-red.svg" alt="dev icon" /></a>
+          </li>
+        </ul>
+      </section>
+    </header>
 
+    <!-- Nav Section -->
+    <nav class="site-nav">
+      <div class="hamburger"><img src="assets/hamburger_dark-red.svg" alt="hamburger-menu icon" /></div>
+      <div class="menu-container">
+        <ul class="menu">
+          <li class="menu-item menu-item border"><a href="#showcase"> Home </a></li>
+          <li class="menu-item border"><a href="#about"> About </a></li>
+          <li class="menu-item border"><a href="#work"> Work </a></li>
+          <li class="menu-item"><a href="#contact"> Contact </a></li>
+        </ul>
+      </div>
+    </nav>
 
-    <!-- Social Section -->
-    <section class="social">
-      <ul>
-        <li><a href="https://www.linkedin.com/in/eva-greiner-anzenbacher/" target="_blank"><img
-              src="assets/linkedin_dark-red.svg" alt="linkedin icon"></a></li>
-        <li><a href="https://github.com/evagrean" target="_blank"><img src="assets/github_dark-red.svg"
-              alt="github icon"></a>
-        </li>
-        <li><a href="https://twitter.com/eva_grean" target="_blank"><img src="assets/twitter_dark-red.svg"
-              alt="twitter icon"></a></li>
-      </ul>
-
-
-    </section>
-
-  </header>
-
-  <!-- Nav Section -->
-  <nav class="site-nav">
-    <div class="hamburger"><img src="assets/hamburger_dark-red.svg" alt="hamburger-menu icon"></div>
-    <div class="menu-container">
-      <ul class="menu">
-        <li class="menu-item menu-item border"><a href="#showcase">
-            Home
-          </a></li>
-        <li class="menu-item border"><a href="#about">
-            About
-          </a></li>
-        <li class="menu-item border"> <a href="#work">
-            Work
-          </a></li>
-        <li class="menu-item"><a href="#contact">
-            Contact
-          </a></li>
-
-      </ul>
-    </div>
-  </nav>
-
-  <!-- Main Area-->
-  <main id="main">
-    <!-- About Section -->
-    <section id="about">
-      <h1 class="about-title">About</h1>
-      <!-- Transferable Skills cards -->
-      <div class="transferable-skills grid">
-
-        <div class="card skills-card dev-card">
-          <div class="development-icon">
-            <span class="material-icons">
-              code
-            </span>
-          </div>
-          <div class="card-text">
-            <div class="card-title">
-              <h3>I am a certified web developer</h3>
+    <!-- Main Area-->
+    <main id="main">
+      <!-- About Section -->
+      <section id="about">
+        <h1 class="about-title">About</h1>
+        <!-- Transferable Skills cards -->
+        <div class="transferable-skills grid">
+          <div class="card skills-card dev-card">
+            <div class="development-icon">
+              <span class="material-icons"> code </span>
             </div>
-            <p>I completed an eight-month full-stack web development course, with the guidance of a
-              personal tutor and
-              mentor.
-              Amongst others I built a <a href="#chatapp">Native Chat App</a>, as well as a <a href="#myflix">Full-Stack
-                Project</a> using the MERN
-              stack.
-
-            </p>
-          </div>
-        </div>
-
-        <div class="card skills-card">
-          <div class="learning-icon">
-            <span class="material-icons">
-              emoji_objects
-            </span>
-          </div>
-          <div class="card-text">
-            <h3 class="card-title">I am a lifelong learner</h3>
-            <p>Learning to code was on my bucket list since I dipped into the world of tech during my first job as a
-              content editor. I enjoy working on intellectually challenging tasks and factoring new
-              technologies into my daily work.
-            </p>
-          </div>
-        </div>
-
-        <div class="card skills-card">
-          <div class="people-icon">
-            <span class="material-icons">
-              supervisor_account
-            </span>
-          </div>
-          <div class="card-text">
-            <div class="card-title">
-              <h3>I like to work with people</h3>
+            <div class="card-text">
+              <div class="card-title">
+                <h3>I am a certified web developer</h3>
+              </div>
+              <p>I completed an eight-month full-stack web development course, with the guidance of a personal tutor and mentor. Amongst others I built a <a href="#chatapp">Native Chat App</a>, as well as a <a href="#myflix">Full-Stack Project</a> using the MERN stack.</p>
             </div>
-            <p>It makes me happy to co-create and implement new concepts together with other people.
-              Ten years of experience in the retail industry help me to take a user-centric perspective and act
-              solution-oriented.
-
-            </p>
           </div>
-        </div>
 
-
-        <div class="card skills-card">
-          <div class="graduation-icon">
-            <span class="material-icons">
-              school
-            </span>
-          </div>
-          <div class="card-text">
-            <h3 class="card-title">I have a Master's degree</h3>
-            <p>My academic background helps me to independently search and critically evaluate information. It also
-              brings me in a good position to think outside the box when facing
-              technical challenges.</p>
-          </div>
-        </div>
-        <div class="card skills-card hobby-card">
-          <div class="nature-icon">
-            <span class="material-icons">
-              nature_people
-            </span>
-          </div>
-          <div class="card-text">
-            <h3 class="card-title">Besides Coding</h3>
-            <p>I like spending time outdoors with my family, italian food, opera evenings, and podcasts about Harry Potter and other developers' coding journeys.</p>
-          </div>
-        </div>
-      </div>
-      <a href="https://github.com/evagrean/onepage-portfolio/raw/master/downloads/greiner-anzenbacher-eva-resume_en.pdf"
-        class="btn btn-cv" target="_blank">Download my resume</a>
-    </section>
-
-
-    <section id="dev-skills">
-      <span class="devskills-tag">javascript</span>
-      <span class="devskills-tag">html</span>
-      <span class="devskills-tag">css</span>
-      <span class="devskills-tag">sass</span>
-      <span class="devskills-tag">bootstrap</span>
-      <span class="devskills-tag">jquery</span>
-      <span class="devskills-tag">git</span>
-      <span class="devskills-tag">npm</span>
-      <span class="devskills-tag">node</span>
-      <span class="devskills-tag">mongodb</span>
-      <span class="devskills-tag">react</span>
-      <span class="devskills-tag">react native</span>
-      <span class="devskills-tag">AWS</span>
-      <span class="devskills-tag">serverless</span>
-      <span class="devskills-tag">firebase</span>
-    </section>
-    <section id="work">
-      <h1 class="work-title">Work</h1>
-      <div class="projects projects-grid">
-        <div class="card project-card myflix-card" id="myflix">
-
-          <img src="assets/myflix.png" alt="screenshot of myflix movie list screen">
-
-          <div class="card-content">
-            <h3 class="project-title">MyFlix Movie App </h3>
-            <p>A web app that provides users with access to information about movies, directors, and genres.
-              Users can sign up, update personal data, and create a list of favorites. Server-side and
-              client-side were developed using the MERN stack.
-            </p>
-            <div class="read-more-myflix">
-              <h4>Server-Side</h4>
-              <p>
-                I created a RESTful API using Node.js and Express, that interacts with a non-relational database
-                (MongoDB). The API can be accessed via commonly used HTTP methods like GET or POST. To retrieve data
-                from
-                and store data in the database, CRUD methods are used. The API provides movie information in JSON
-                format.
-                <br><br>
-                <a href="https://github.com/evagrean/myFlix-app#endpoints" class="endpoint-link" target="_blank">
-                  <span class="material-icons arrow-right">
-                    arrow_right
-                  </span><span>View
-                    endpoints</span></a>
-              </p>
-              <p>
-                To test the API, I used Postman. I also included user authentication and authorization code in the form
-                of
-                basic HTTP authentication and JWT authentication.
-              </p>
-              <h4>Client-Side</h4>
-              <p>
-                After completing the API, I started to build the interface users would need when making requests to, and
-                receiving responses from, the server-side. It is a single-page, responsive application, developed with
-                React and React-Redux. It provides several interface views, including, but not limited to, a main view
-                (shows a list of all movies), single movie view (shows data about a single movie and allows users to add
-                the movie to their list of favorites), a login view, a registration view and a profile view (where users
-                can update their user data and list of favorites).
-              </p>
-              <h4>Conclusion</h4>
-              <p>
-                This was both my favorite and most challenging project. I have enjoyed building the
-                API and working with database structures. I also quickly became familiar with using the terminal.
-                Developing the client-side, it took me a while to understand how React and Redux
-                work and how to achieve the desired results. But with the help of my great tutor and
-                after a pair-programming session with an experienced developer, I could conquer that mountain.
-              </p>
+          <div class="card skills-card">
+            <div class="learning-icon">
+              <span class="material-icons"> emoji_objects </span>
             </div>
-            <!-- <div class="btn-toggle btn-toggle-myflix btn">Read more</div> -->
-
-          </div>
-          <div class="project-links"><a href="https://github.com/evagrean/myFlix-app" target="_blank">Code</a><a
-              href="https://my-flix-evagrean.herokuapp.com/client" target="_blank">Demo</a><a href="case.html"
-              target="_blank">Case Study</a></div>
-        </div>
-
-        <div class="card project-card chatapp-card" id="chatapp">
-
-          <img class="project-img" src="assets/chatapp.png" alt="screenshots of chatapp start and chat screens">
-
-          <div class="card-content">
-            <h3 class="project-title">Native Chat App</h3>
-            <p>A chat app for mobile devices built with React-Native. It provides users with a chat interface where they
-              can send/receive text messages and images as well as share their location.</p>
-            <div class="read-more-chatapp">
-              <h4>Technical Data</h4>
-              <p>I used Expo.io to develop the app. It is optimized for both Android and iOS devices. The chat interface
-                and functionallity I created using the Gifted Chat library.
-              </p>
-              <p>
-                To store the chat messages, I used the Google Firestore Database. Images are stored in Firebase Cloud
-                Storage. To make the chat conversations available offline , I used asyncStorage to store them locally.
-                When users are offline, they can’t create new messages (using Gifted Chat’s renderInputToolbar prop). I
-                used Google Firebase authentication to authenticate users anonymously.<br><br>
-                <a href="https://github.com/evagrean/chat-app#prerequisites" class="setup-link" target="_blank"><span
-                    class="material-icons arrow-right">
-                    arrow_right
-                  </span><span>View project
-                    setup
-                    manual</span></a>
-              </p>
-              <h4>Error handling</h4>
-              <p>
-                During development, I ran into a few difficulties, often caused by outdated combinations of packages or
-                dependencies. Amongst others, I had to research the correct version of NetInfo to get the app up and
-                running and also had to install Base64 encoder/decoder to handle 'atob()' and 'botoa()' issues.
-              </p>
-              <h4>Conclusion</h4>
-              <p>This chat app was the final project for my full-stack web development bootcamp. Besides all
-                difficulties, I realized how I grew in handling problems and solving bugs independently. I improved in
-                figuring out what search terms to use when trying to find an answer with Google. I got a solid grasp of
-                when it might help to temporary set a console.log() to know what’s going on.</p>
+            <div class="card-text">
+              <h3 class="card-title">I am a lifelong learner</h3>
+              <p>Learning to code was on my bucket list since I dipped into the world of tech during my first job as a content editor. I enjoy working on intellectually challenging tasks and factoring new technologies into my daily work.</p>
             </div>
-            <div class="btn-toggle btn-toggle-chatapp btn">Read more</div>
           </div>
-          <div class="project-links"><a href="https://github.com/evagrean/chat-app" target="_blank">Code</a><a
-              href="https://evagrean.github.io/chat-app-demo/" target="_blank">Demo</a></div>
 
-        </div>
-
-        <div class="card project-card meetup-card">
-          <img src="assets/meetup.png" alt="screenshot of meetup start screen">
-
-          <div class="card-content">
-            <h3 class="project-title">Meetup App</h3>
-            <p>A serverless, progressive web app (PWA) built with React using a test-driven development technique (TDD).
-              The app uses the Meetup API to fetch upcoming events for a selected city, and OAuth2 authentication flow.
-              For the authorization server it uses AWS Lambda. Alerts for users are created by using an OOP approach. A
-              service worker allows the app to work offline. The recharts library is used to visualize data with a
-              scatter graph and a pie chart.
-            </p>
-
+          <div class="card skills-card">
+            <div class="people-icon">
+              <span class="material-icons"> supervisor_account </span>
+            </div>
+            <div class="card-text">
+              <div class="card-title">
+                <h3>I like to work with people</h3>
+              </div>
+              <p>It makes me happy to co-create and implement new concepts together with other people. Ten years of experience in the retail industry help me to take a user-centric perspective and act solution-oriented.</p>
+            </div>
           </div>
-          <div class="project-links"><a href="https://github.com/evagrean/meetup-app" target="_blank">Code</a><a
-              href="https://evagrean.github.io/meetup-app/" target="_blank">Demo</a></div>
-        </div>
 
-        <div class="card project-card">
-
-          <img src="assets/portfolio.png" alt="screenshot of portfolio home screen">
-
-          <div class="card-content">
-            <h3 class="project-title">Portfolio Website</h3>
-            <p>A responsive onepager to showcase my professional portfolio, designed following a mobile-first approach.
-              It is built with pure HTML, CSS (grid, flexbox) and some snippets of Javascript to toggle a hamburger
-              menu and read-more buttons. The CSS code uses native variables for repetitive values. A postprocessor was
-              used to
-              improve browser support.
-
-            </p>
-
+          <div class="card skills-card">
+            <div class="graduation-icon">
+              <span class="material-icons"> school </span>
+            </div>
+            <div class="card-text">
+              <h3 class="card-title">I have a Master's degree</h3>
+              <p>My academic background helps me to independently search and critically evaluate information. It also brings me in a good position to think outside the box when facing technical challenges.</p>
+            </div>
           </div>
-          <div class="project-links"><a href="https://github.com/evagrean/onepage-portfolio" target="_blank">Code</a>
+          <div class="card skills-card hobby-card">
+            <div class="nature-icon">
+              <span class="material-icons"> nature_people </span>
+            </div>
+            <div class="card-text">
+              <h3 class="card-title">Besides Coding</h3>
+              <p>I like spending time outdoors with my family, italian food, opera evenings, and podcasts about Harry Potter.</p>
+            </div>
           </div>
         </div>
+        <a href="https://github.com/evagrean/onepage-portfolio/raw/master/downloads/greiner-anzenbacher-eva-resume_en.pdf" class="btn btn-cv" target="_blank">Download my resume</a>
+      </section>
 
-        <div class="card project-card">
-          <img src="assets/pokedex.png" alt="screenshot of pokedex list with open modal">
-          <div class="card-content">
-            <h3 class="project-title">Pokedex App</h3>
-            <p>A small web app built with Javascript, HTML, CSS, jQuery, and Bootstrap framework. Users can search
-              through a pokemon collection that is loading from an external API. Details can be displayed in a modal by
-              clicking on a pokemon's name. The code has been formatted according to ESLint rules. </p>
+      <section id="dev-skills">
+        <span class="devskills-tag">javascript</span>
+        <span class="devskills-tag">typescript</span>
+        <span class="devskills-tag">html</span>
+        <span class="devskills-tag">css</span>
+        <span class="devskills-tag">sass</span>
+        <span class="devskills-tag">bootstrap</span>
+        <span class="devskills-tag">jquery</span>
+        <span class="devskills-tag">git</span>
+        <span class="devskills-tag">node</span>
+        <span class="devskills-tag">mongodb</span>
+        <span class="devskills-tag">react</span>
+        <span class="devskills-tag">aws</span>
+        <span class="devskills-tag">serverless</span>
+        <span class="devskills-tag">firebase</span>
+      </section>
+      <section id="work">
+        <h1 class="work-title">Work</h1>
+        <div class="projects projects-grid">
+          <div class="card project-card myflix-card" id="myflix">
+            <img src="assets/myflix.png" alt="screenshot of myflix movie list screen" />
 
+            <div class="card-content">
+              <h3 class="project-title">MyFlix Movie App</h3>
+              <p>A web app that provides users with access to information about movies, directors, and genres. Users can sign up, update personal data, and create a list of favorites. Server-side and client-side were developed using the MERN stack.</p>
+              <div class="read-more-myflix">
+                <h4>Server-Side</h4>
+                <p>
+                  I created a RESTful API using Node.js and Express, that interacts with a non-relational database (MongoDB). The API can be accessed via commonly used HTTP methods like GET or POST. To retrieve data from and store data in the database, CRUD methods are used. The API provides movie information in JSON format.
+                  <br /><br />
+                  <a href="https://github.com/evagrean/myFlix-app#endpoints" class="endpoint-link" target="_blank"> <span class="material-icons arrow-right"> arrow_right </span><span>View endpoints</span></a>
+                </p>
+                <p>To test the API, I used Postman. I also included user authentication and authorization code in the form of basic HTTP authentication and JWT authentication.</p>
+                <h4>Client-Side</h4>
+                <p>After completing the API, I started to build the interface users would need when making requests to, and receiving responses from, the server-side. It is a single-page, responsive application, developed with React and React-Redux. It provides several interface views, including, but not limited to, a main view (shows a list of all movies), single movie view (shows data about a single movie and allows users to add the movie to their list of favorites), a login view, a registration view and a profile view (where users can update their user data and list of favorites).</p>
+                <h4>Conclusion</h4>
+                <p>This was both my favorite and most challenging project. I have enjoyed building the API and working with database structures. I also quickly became familiar with using the terminal. Developing the client-side, it took me a while to understand how React and Redux work and how to achieve the desired results. But with the help of my great tutor and after a pair-programming session with an experienced developer, I could conquer that mountain.</p>
+              </div>
+              <!-- <div class="btn-toggle btn-toggle-myflix btn">Read more</div> -->
+            </div>
+            <div class="project-links"><a href="https://github.com/evagrean/myFlix-app" target="_blank">Code</a><a href="https://my-flix-evagrean.herokuapp.com/client" target="_blank">Demo</a><a href="case.html" target="_blank">Case Study</a></div>
           </div>
-          <div class="project-links"><a href="https://github.com/evagrean/pokedex-app-jQuery" target="_blank">Code</a><a
-              href="https://evagrean.github.io/pokedex-app-jQuery/" target="_blank">Demo</a></div>
-        </div>
-        <div class="card project-card">
-          <img src="assets/quizapp.png" alt="screenshot of quizapp start screen">
-          <div class="card-content">
-            <h3 class="project-title">Quiz App</h3>
-            <p>A basic single-page app to practice Angular framework and TypeScript. The application presents users with
-              multiple choice questions on various topics. Once users have answered all the questions, their results
-              will be displayed. It uses Angular Material for the UI layout and Angular Flex Layout Module to ensure
-              responsibility.
-            </p>
 
+          <div class="card project-card chatapp-card" id="chatapp">
+            <img class="project-img" src="assets/chatapp.png" alt="screenshots of chatapp start and chat screens" />
+
+            <div class="card-content">
+              <h3 class="project-title">Native Chat App</h3>
+              <p>A chat app for mobile devices built with React-Native. It provides users with a chat interface where they can send/receive text messages and images as well as share their location.</p>
+              <div class="read-more-chatapp">
+                <h4>Technical Data</h4>
+                <p>I used Expo.io to develop the app. It is optimized for both Android and iOS devices. The chat interface and functionallity I created using the Gifted Chat library.</p>
+                <p>
+                  To store the chat messages, I used the Google Firestore Database. Images are stored in Firebase Cloud Storage. To make the chat conversations available offline , I used asyncStorage to store them locally. When users are offline, they can’t create new messages (using Gifted Chat’s renderInputToolbar prop). I used Google Firebase authentication to authenticate users anonymously.<br /><br />
+                  <a href="https://github.com/evagrean/chat-app#prerequisites" class="setup-link" target="_blank"><span class="material-icons arrow-right"> arrow_right </span><span>View project setup manual</span></a>
+                </p>
+                <h4>Error handling</h4>
+                <p>During development, I ran into a few difficulties, often caused by outdated combinations of packages or dependencies. Amongst others, I had to research the correct version of NetInfo to get the app up and running and also had to install Base64 encoder/decoder to handle 'atob()' and 'botoa()' issues.</p>
+                <h4>Conclusion</h4>
+                <p>This chat app was the final project for my full-stack web development bootcamp. Besides all difficulties, I realized how I grew in handling problems and solving bugs independently. I improved in figuring out what search terms to use when trying to find an answer with Google. I got a solid grasp of when it might help to temporary set a console.log() to know what’s going on.</p>
+              </div>
+              <div class="btn-toggle btn-toggle-chatapp btn">Read more</div>
+            </div>
+            <div class="project-links"><a href="https://github.com/evagrean/chat-app" target="_blank">Code</a><a href="https://evagrean.github.io/chat-app-demo/" target="_blank">Demo</a></div>
           </div>
-          <div class="project-links"><a href="https://github.com/evagrean/quiz-app" target="_blank">Code</a><a
-              href="https://evagrean.github.io/quiz-app/" target="_blank">Demo</a></div>
-        </div>
-        <div class="card project-card">
-          <img src="assets/todo.png" alt="screenshot of custom todo list screen">
-          <div class="card-content">
-            <h3 class="project-title">Todo App</h3>
-            <p>Last but not least – an absolute classic hit: A basic todo-list app to practice the Vue.js framework. A
-              user can add and delete todos, edit them and mark them as completed. Vue Material is incorporated for its
-              visual design.
-            </p>
 
+          <div class="card project-card meetup-card">
+            <img src="assets/meetup.png" alt="screenshot of meetup start screen" />
+
+            <div class="card-content">
+              <h3 class="project-title">Meetup App</h3>
+              <p>A serverless, progressive web app (PWA) built with React using a test-driven development technique (TDD). The app uses the Meetup API to fetch upcoming events for a selected city, and OAuth2 authentication flow. For the authorization server it uses AWS Lambda. Alerts for users are created by using an OOP approach. A service worker allows the app to work offline. The recharts library is used to visualize data with a scatter graph and a pie chart.</p>
+            </div>
+            <div class="project-links"><a href="https://github.com/evagrean/meetup-app" target="_blank">Code</a><a href="https://evagrean.github.io/meetup-app/" target="_blank">Demo</a></div>
           </div>
-          <div class="project-links"><a href="https://github.com/evagrean/todo-app" target="_blank">Code</a><a
-              href="https://first-things-first.netlify.app/" target="_blank">Demo</a></div>
-        </div>
-        <div class="card project-card">
-          <img src="assets/placeholder-img.jpg" alt="placeholder image laptop">
-          <div class="card-content">
-            <h3 class="project-title">Work in Progress</h3>
-            <ul class="checklist">
-              <li>Commit to the #100DaysOfCode challenge on twitter to keep coding</li>
-              <li>Contribute to open source projects to improve my skills</li>
-              <li>Build another Vue.js project because currently it's the most growing JS framework</li>
-              <li>Build another project using serverless technology and React to improve demanded skills</li>
 
-            </ul>
+          <div class="card project-card">
+            <img src="assets/portfolio.png" alt="screenshot of portfolio home screen" />
 
+            <div class="card-content">
+              <h3 class="project-title">Portfolio Website</h3>
+              <p>A responsive onepager to showcase my professional portfolio, designed following a mobile-first approach. It is built with pure HTML, CSS (grid, flexbox) and some snippets of Javascript to toggle a hamburger menu and read-more buttons. The CSS code uses native variables for repetitive values. A postprocessor was used to improve browser support.</p>
+            </div>
+            <div class="project-links"><a href="https://github.com/evagrean/onepage-portfolio" target="_blank">Code</a></div>
+          </div>
 
-
-
+          <div class="card project-card">
+            <img src="assets/pokedex.png" alt="screenshot of pokedex list with open modal" />
+            <div class="card-content">
+              <h3 class="project-title">Pokedex App</h3>
+              <p>A small web app built with Javascript, HTML, CSS, jQuery, and Bootstrap framework. Users can search through a pokemon collection that is loading from an external API. Details can be displayed in a modal by clicking on a pokemon's name. The code has been formatted according to ESLint rules.</p>
+            </div>
+            <div class="project-links"><a href="https://github.com/evagrean/pokedex-app-jQuery" target="_blank">Code</a><a href="https://evagrean.github.io/pokedex-app-jQuery/" target="_blank">Demo</a></div>
+          </div>
+          <div class="card project-card">
+            <img src="assets/quizapp.png" alt="screenshot of quizapp start screen" />
+            <div class="card-content">
+              <h3 class="project-title">Quiz App</h3>
+              <p>A basic single-page app to practice Angular framework and TypeScript. The application presents users with multiple choice questions on various topics. Once users have answered all the questions, their results will be displayed. It uses Angular Material for the UI layout and Angular Flex Layout Module to ensure responsibility.</p>
+            </div>
+            <div class="project-links"><a href="https://github.com/evagrean/quiz-app" target="_blank">Code</a><a href="https://evagrean.github.io/quiz-app/" target="_blank">Demo</a></div>
+          </div>
+          <div class="card project-card">
+            <img src="assets/todo.png" alt="screenshot of custom todo list screen" />
+            <div class="card-content">
+              <h3 class="project-title">Todo App</h3>
+              <p>Last but not least – an absolute classic hit: A basic todo-list app to practice the Vue.js framework. A user can add and delete todos, edit them and mark them as completed. Vue Material is incorporated for its visual design.</p>
+            </div>
+            <div class="project-links"><a href="https://github.com/evagrean/todo-app" target="_blank">Code</a><a href="https://first-things-first.netlify.app/" target="_blank">Demo</a></div>
+          </div>
+          <div class="card project-card">
+            <img src="assets/placeholder-img.jpg" alt="placeholder image laptop" />
+            <div class="card-content">
+              <h3 class="project-title">Work in Progress</h3>
+              <ul class="checklist">
+                <li>Commit to the #100DaysOfCode challenge on twitter to keep coding</li>
+                <li>Contribute to open source projects to improve my skills</li>
+                <li>Build another Vue.js project because currently it's the most growing JS framework</li>
+                <li>Build another project using serverless technology and React to improve demanded skills</li>
+              </ul>
+            </div>
           </div>
         </div>
-
-      </div>
-
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="content-container">
-        <h1 class="contact-title">Contact</h1>
-        <p>Eva Greiner-Anzenbacher<br>
-          Berlin, Germany</p>
-        <p class="email">
-          <span class="material-icons mail-icon">
-            email
-          </span>
-          <span>greiner.anzenbacher@gmail.com</span>
-        </p>
-      </div>
-    </section>
-    <!-- Social Section -->
-    <section class="social">
-      <ul>
-        <li><a href="https://www.linkedin.com/in/eva-greiner-anzenbacher/" target="_blank"><img
-              src="assets/linkedin_dark-red.svg" alt="linkedin icon"></a></li>
-        <li><a href="https://github.com/evagrean" target="_blank"><img src="assets/github_dark-red.svg"
-              alt="github icon"></a>
-        </li>
-        <li><a href="https://twitter.com/eva_grean" target="_blank"><img src="assets/twitter_dark-red.svg"
-              alt="twitter icon"></a></li>
-      </ul>
-
-
-    </section>
-  </main>
-  <!-- Footer -->
-  <footer id="main-footer">
-    <p class="credit">&copy; Copyright 2020</p>
-    <p>Designed and developed by Eva Greiner-Anzenbacher</p>
-    <a href="#showcase"><span class="material-icons arrow-up">
-        keyboard_arrow_up
-      </span></a>
-  </footer>
-  <script src="js/scripts.js"></script>
-</body>
-
+      </section>
+      <!-- Contact Section -->
+      <section id="contact">
+        <div class="content-container">
+          <h1 class="contact-title">Contact</h1>
+          <p>
+            Eva Greiner-Anzenbacher<br />
+            Berlin, Germany
+          </p>
+          <p class="email">
+            <span class="material-icons mail-icon"> email </span>
+            <span>greiner.anzenbacher@gmail.com</span>
+          </p>
+        </div>
+      </section>
+      <!-- Social Section -->
+      <section class="social">
+        <ul>
+          <li>
+            <a href="https://www.linkedin.com/in/eva-greiner-anzenbacher/" target="_blank"><img src="assets/linkedin_dark-red.svg" alt="linkedin icon" /></a>
+          </li>
+          <li>
+            <a href="https://github.com/evagrean" target="_blank"><img src="assets/github_dark-red.svg" alt="github icon" /></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/eva_grean" target="_blank"><img src="assets/twitter_dark-red.svg" alt="twitter icon" /></a>
+          </li>
+          <li>
+            <a href="https://dev.to/evagrean" target="_blank"><img src="assets/dev_dark-red.svg" alt="dev icon" /></a>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="main-footer">
+      <p class="credit">&copy; Copyright 2021</p>
+      <p>Designed and developed by Eva Greiner-Anzenbacher</p>
+      <a href="#showcase"><span class="material-icons arrow-up"> keyboard_arrow_up </span></a>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
 </html>
