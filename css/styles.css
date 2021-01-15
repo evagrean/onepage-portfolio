@@ -10,16 +10,8 @@
   --secondary-bg-color: #fff;
   --primary-font-color: #fff;
   --secondary-font-color: #343a40;
-  --font-family-body:
-    'Nunito',
-    Verdana,
-    Geneva,
-    sans-serif;
-  --font-family-headings:
-    'Nunito Sans',
-    Verdana,
-    Geneva,
-    sans-serif;
+  --font-family-body: "Nunito", Verdana, Geneva, sans-serif;
+  --font-family-headings: "Nunito Sans", Verdana, Geneva, sans-serif;
 }
 
 /* Reset */
@@ -420,7 +412,7 @@ nav {
 .checklist {
   margin-top: 1em;
   padding-bottom: 2em;
-  list-style-type: '\2713';
+  list-style-type: "\2713";
   text-align: left;
 }
 
