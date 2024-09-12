@@ -1,3 +1,15 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+/* Dev helpers*/
+/* * {
+  outline: 1px solid purple;
+} */
+
 /* Reset */
 * {
   -webkit-box-sizing: border-box;
@@ -11,62 +23,34 @@ body {
   background: #343a40;
   color: #fff;
   text-align: center;
-  font-family:
-    'Nunito',
-    Verdana,
-    Geneva,
-    sans-serif;
+  font-family: "Nunito", Verdana, Geneva, sans-serif;
   font-size: 1em;
   line-height: 1.5em;
   scroll-behavior: smooth;
 }
 
 h1 {
-  font-family:
-    'Nunito Sans',
-    Verdana,
-    Geneva,
-    sans-serif;
+  font-family: "Nunito Sans", Verdana, Geneva, sans-serif;
 }
 
 h2 {
-  font-family:
-    'Nunito Sans',
-    Verdana,
-    Geneva,
-    sans-serif;
+  font-family: "Nunito Sans", Verdana, Geneva, sans-serif;
 }
 
 h3 {
-  font-family:
-    'Nunito Sans',
-    Verdana,
-    Geneva,
-    sans-serif;
+  font-family: "Nunito Sans", Verdana, Geneva, sans-serif;
 }
 
 h4 {
-  font-family:
-    'Nunito Sans',
-    Verdana,
-    Geneva,
-    sans-serif;
+  font-family: "Nunito Sans", Verdana, Geneva, sans-serif;
 }
 
 h5 {
-  font-family:
-    'Nunito Sans',
-    Verdana,
-    Geneva,
-    sans-serif;
+  font-family: "Nunito Sans", Verdana, Geneva, sans-serif;
 }
 
 h6 {
-  font-family:
-    'Nunito Sans',
-    Verdana,
-    Geneva,
-    sans-serif;
+  font-family: "Nunito Sans", Verdana, Geneva, sans-serif;
 }
 
 h1,
@@ -216,7 +200,6 @@ a {
 
 /* Nav Section */
 nav {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 0 0.5;
@@ -384,6 +367,18 @@ nav {
   font-size: 0.8em;
 }
 
+.devskills-card {
+  padding: 0.5em;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  max-width: 9em;
+  background: #24282c;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.6em;
+}
+
 /* Work Section */
 
 #work {
@@ -451,12 +446,12 @@ nav {
 }
 
 .read-more-chatapp,
-.read-more-myflix {
+.read-more-projects {
   display: none;
 }
 
 .read-more-chatapp.visible,
-.read-more-myflix.visible {
+.read-more-projects.visible {
   display: block;
 }
 
@@ -503,7 +498,7 @@ nav {
 .checklist {
   margin-top: 1em;
   padding-bottom: 2em;
-  list-style-type: '\2713';
+  list-style-type: "\2713";
   text-align: left;
 }
 
@@ -541,6 +536,34 @@ nav {
 .project-links a:hover {
   background: none;
   color: #24282c;
+}
+
+.project-category {
+  padding: 0.5em;
+  text-transform: uppercase;
+  border-bottom: 5px solid #24282c;
+  background: #343a40;
+  color: #fff;
+}
+
+.material-icons.arrow-down.dark {
+  margin-left: 0.5em;
+  color: #343a40;
+  font-size: 1em;
+}
+
+.btn-toggle-projects {
+  margin: 1em 0;
+  padding: 0;
+  color: #343a40;
+  background: none;
+  cursor: pointer;
+}
+
+.btn-toggle-projects:hover {
+  background: none;
+  color: #343a40;
+  text-decoration: underline;
 }
 
 /* Contact Section */
@@ -617,7 +640,6 @@ nav {
 }
 
 .case-header {
-  position: -webkit-sticky;
   position: sticky;
   top: 0;
   padding: 1.5em;
@@ -693,6 +715,54 @@ nav {
   text-align: center;
 }
 
+.case-study-return ul {
+  list-style-type: circle;
+}
+
+.case-study-return li {
+  margin-left: 1em;
+}
+
+.tech-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  margin: 1em 0;
+}
+
+.tech-stack ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-stack li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.tech-stack img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
+}
+
+.tech-stack span {
+  font-size: 1.2em;
+  color: #343a40;
+}
+
 /* Small tablet styles */
 
 @media screen and (min-width: 576px) {
@@ -707,7 +777,7 @@ nav {
   .grid {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr 0.5em 1fr 0.5em;
+    -ms-grid-columns: 1fr 0.5em 1fr;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     -webkit-box-pack: center;
@@ -768,10 +838,6 @@ nav {
 
   .arrow-up {
     display: none;
-  }
-
-  .case-study {
-    margin: 0 10em;
   }
 }
 
@@ -861,6 +927,94 @@ nav {
   .client-img img {
     width: 95%;
   }
+
+  #challenge-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 2em; /* Adds more space between multiple challenge-container sections */
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative;
+    padding: 1em;
+    background-color: #f9f6f7; /* Optional: background color for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    -webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better separation */
+  }
+
+  #challenge {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Border around each section */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+    position: relative;
+  }
+
+  #solution {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 1em;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Border around each section */
+    border-radius: 8px; /* Rounded corners */
+    background-color: #fff; /* Background color */
+    -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+    position: relative;
+  }
+
+  #challenge:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px; /* Adjust as needed */
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid #fff; /* Color of the arrow */
+  }
+
+  #solution {
+    margin-left: 40px; /* Ensure there's space for the arrow */
+  }
+
+  #challenge p {
+    color: #343a40;
+  }
+
+  #solution p {
+    color: #343a40;
+  }
+
+  #challenge ul,
+  #solution ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  #challenge ul li,
+  #solution ul li {
+    margin-bottom: 0.5em;
+  }
 }
 
 /* Desktop styles */
@@ -906,6 +1060,10 @@ nav {
 
   #contact {
     padding: 3em;
+  }
+
+  .case-study {
+    margin: 0 10em;
   }
 }
 

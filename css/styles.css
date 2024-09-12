@@ -14,6 +14,11 @@
   --font-family-headings: "Nunito Sans", Verdana, Geneva, sans-serif;
 }
 
+/* Dev helpers*/
+/* * {
+  outline: 1px solid purple;
+} */
+
 /* Reset */
 * {
   box-sizing: border-box;
@@ -320,6 +325,16 @@ nav {
   font-size: 0.8em;
 }
 
+.devskills-card {
+  padding: 0.5em;
+  flex-grow: 1;
+  max-width: 9em;
+  background: var(--secondary-darker);
+  color: var(--primary-font-color);
+  text-transform: uppercase;
+  font-size: 0.6em;
+}
+
 /* Work Section */
 
 #work {
@@ -379,12 +394,12 @@ nav {
 }
 
 .read-more-chatapp,
-.read-more-myflix {
+.read-more-projects {
   display: none;
 }
 
 .read-more-chatapp.visible,
-.read-more-myflix.visible {
+.read-more-projects.visible {
   display: block;
 }
 
@@ -441,6 +456,34 @@ nav {
 .project-links a:hover {
   background: none;
   color: var(--secondary-darker);
+}
+
+.project-category {
+  padding: 0.5em;
+  text-transform: uppercase;
+  border-bottom: 5px solid var(--secondary-darker);
+  background: var(--secondary-color);
+  color: var(--primary-font-color);
+}
+
+.material-icons.arrow-down.dark {
+  margin-left: 0.5em;
+  color: var(--secondary-font-color);
+  font-size: 1em;
+}
+
+.btn-toggle-projects {
+  margin: 1em 0;
+  padding: 0;
+  color: var(--secondary-font-color);
+  background: none;
+  cursor: pointer;
+}
+
+.btn-toggle-projects:hover {
+  background: none;
+  color: var(--secondary-color);
+  text-decoration: underline;
 }
 
 /* Contact Section */
@@ -582,6 +625,43 @@ nav {
   text-align: center;
 }
 
+.case-study-return ul {
+  list-style-type: circle;
+}
+
+.case-study-return li {
+  margin-left: 1em;
+}
+
+.tech-stack {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 1em 0;
+}
+
+.tech-stack ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.tech-stack li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5em;
+}
+
+.tech-stack img {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5em;
+}
+
+.tech-stack span {
+  font-size: 1.2em;
+  color: var(--secondary-font-color);
+}
+
 /* Small tablet styles */
 
 @media screen and (min-width: 576px) {
@@ -712,6 +792,64 @@ nav {
 
   .client-img img {
     width: 95%;
+  }
+
+  #challenge-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
+    margin-bottom: 2em; /* Adds more space between multiple challenge-container sections */
+    align-items: center;
+    position: relative;
+    padding: 1em;
+    background-color: var(--primary-bg-color); /* Optional: background color for the container */
+    border-radius: 8px; /* Rounded corners for the container */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds a shadow for better separation */
+  }
+
+  #challenge,
+  #solution {
+    flex: 1;
+    padding: 1em;
+    box-sizing: border-box;
+    border: 1px solid #ccc; /* Border around each section */
+    border-radius: 8px; /* Rounded corners */
+    background-color: var(--secondary-bg-color); /* Background color */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow */
+    position: relative;
+  }
+
+  #challenge:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: -20px; /* Adjust as needed */
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 20px solid var(--secondary-bg-color); /* Color of the arrow */
+  }
+
+  #solution {
+    margin-left: 40px; /* Ensure there's space for the arrow */
+  }
+
+  #challenge p,
+  #solution p {
+    color: var(--secondary-font-color);
+  }
+
+  #challenge ul,
+  #solution ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+
+  #challenge ul li,
+  #solution ul li {
+    margin-bottom: 0.5em;
   }
 }
 
